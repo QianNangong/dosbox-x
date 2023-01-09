@@ -57,7 +57,7 @@ jobs:
           cp $top/build-scripts/mingw/hxdos/WINSPOOL.DRV $top/package/
           cp $top/build-scripts/mingw/hxdos/*.DLL $top/package/
       - name: Upload release package
-        uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: dosbox-x-mingw-hx-dos-${{ env.timestamp }}
           path: ${{ github.workspace }}/package/
